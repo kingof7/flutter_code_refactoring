@@ -45,7 +45,9 @@ class Login extends StatelessWidget {
                 ),
               ),
               child: ElevatedButton(
-                style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: )),
+                style: ElevatedButton.styleFrom(
+                    shape: const RoundedRectangleBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(4.0)))),
                 onPressed: () {},
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -96,7 +98,9 @@ class Login extends StatelessWidget {
                 ),
               ),
               child: ElevatedButton(
-                style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: )),
+                style: ElevatedButton.styleFrom(
+                    shape: const RoundedRectangleBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(4.0)))),
                 onPressed: () {},
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -152,8 +156,10 @@ class Login extends StatelessWidget {
                   Radius.circular(4.0),
                 ),
               ),
-              child:ElevatedButton(
-                style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: )),
+              child: ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                    shape: const RoundedRectangleBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(4.0)))),
                 onPressed: () {},
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,

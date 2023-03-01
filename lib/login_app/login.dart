@@ -2,14 +2,14 @@ import 'package:app/my_button/my_button.dart';
 import 'package:flutter/material.dart';
 
 class LogIn extends StatelessWidget {
-    const LogIn({super.key});
+  const LogIn({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.blue,
-        title:   const Text(
+        title: const Text(
           'Sign In',
           style: TextStyle(color: Colors.white),
         ),
@@ -23,25 +23,29 @@ class LogIn extends StatelessWidget {
 
 Widget buildButton() {
   return Padding(
-    padding:   const EdgeInsets.all(16.0),
+    padding: const EdgeInsets.all(16.0),
     child: Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
         ButtonTheme(
           height: 50.0,
-          shape:   const RoundedRectangleBorder(
+          shape: const RoundedRectangleBorder(
             borderRadius: BorderRadius.all(
               Radius.circular(4.0),
             ),
           ),
           child: ElevatedButton(
-            style: ElevatedButton.styleFrom(shape: const RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(4.0),),),),
+            style: ElevatedButton.styleFrom(
+              shape: const RoundedRectangleBorder(
+                borderRadius: BorderRadius.all(Radius.circular(4.0)),
+              ),
+            ),
             onPressed: () {},
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
                 Image.asset('images/glogo.png'),
-                  const Text(
+                const Text(
                   'Login with Google',
                   style: TextStyle(
                     color: Colors.black87,
@@ -57,10 +61,21 @@ Widget buildButton() {
             ),
           ),
         ),
-          const SizedBox(
+        const SizedBox(
           height: 10.0,
         ),
-        MyButton(image: Image.asset('image/glogo.png'),
+        MyButton(
+          color: Colors.white,
+          radius: 0.0,
+          onPressed: () {},
+          image: Image.asset('image/glogo.png'),
+          text: const Text(
+            'Login with Google',
+            style: TextStyle(
+              color: Colors.black87,
+              fontSize: 15.0,
+            ),
+          ),
         ),
         ButtonTheme(
           height: 50.0,
@@ -82,19 +97,21 @@ Widget buildButton() {
           //   color:  Color(0xFF334D92),
           //   onPressed: () {},
           // ),
-          shape:   const RoundedRectangleBorder(
+          shape: const RoundedRectangleBorder(
             borderRadius: BorderRadius.all(
               Radius.circular(4.0),
             ),
           ),
           child: ElevatedButton(
-            style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: )),
+            style: ElevatedButton.styleFrom(
+                shape: const RoundedRectangleBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(4.0)))),
             onPressed: () {},
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
                 Image.asset('images/glogo.png'),
-                  const Text(
+                const Text(
                   'Login with Google',
                   style: TextStyle(
                     color: Colors.black87,
@@ -110,7 +127,7 @@ Widget buildButton() {
             ),
           ),
         ),
-          const SizedBox(
+        const SizedBox(
           height: 10.0,
         ),
         ButtonTheme(
@@ -139,19 +156,21 @@ Widget buildButton() {
           //   color: Colors.green,
           //   onPressed: () {},
           // ),
-          shape:   const RoundedRectangleBorder(
+          shape: const RoundedRectangleBorder(
             borderRadius: BorderRadius.all(
               Radius.circular(4.0),
             ),
           ),
-          child:ElevatedButton(
-            style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: )),
+          child: ElevatedButton(
+            style: ElevatedButton.styleFrom(
+                shape: const RoundedRectangleBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(4.0)))),
             onPressed: () {},
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
                 Image.asset('images/glogo.png'),
-                  const Text(
+                const Text(
                   'Login with Google',
                   style: TextStyle(
                     color: Colors.black87,

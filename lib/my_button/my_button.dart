@@ -7,13 +7,14 @@ class MyButton extends StatelessWidget {
   final double radius;
   final VoidCallback onPressed;
 
-  const MyButton(
-      {super.key,
-      this.image,
-      this.text,
-      this.color,
-      this.radius,
-      this.onPressed});
+  const MyButton({
+    super.key,
+    required this.image,
+    required this.text,
+    required this.color,
+    required this.radius,
+    required this.onPressed,
+  });
 
   @override
   Widget build(BuildContext context) {
