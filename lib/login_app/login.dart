@@ -27,46 +27,9 @@ Widget buildButton() {
     child: Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
-        ButtonTheme(
-          height: 50.0,
-          shape: const RoundedRectangleBorder(
-            borderRadius: BorderRadius.all(
-              Radius.circular(4.0),
-            ),
-          ),
-          child: ElevatedButton(
-            style: ElevatedButton.styleFrom(
-              shape: const RoundedRectangleBorder(
-                borderRadius: BorderRadius.all(Radius.circular(4.0)),
-              ),
-            ),
-            onPressed: () {},
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: <Widget>[
-                Image.asset('images/glogo.png'),
-                const Text(
-                  'Login with Google',
-                  style: TextStyle(
-                    color: Colors.black87,
-                    fontSize: 15.0,
-                  ),
-                ),
-                Opacity(
-                  // 이미지 투명도를 0으로설정해서 감싸줌
-                  opacity: 0.0,
-                  child: Image.asset('image/glogo.png'),
-                ),
-              ],
-            ),
-          ),
-        ),
-        const SizedBox(
-          height: 10.0,
-        ),
         MyButton(
           color: Colors.white,
-          radius: 0.0,
+          radius: 4.0,
           onPressed: () {},
           image: Image.asset('image/glogo.png'),
           text: const Text(
@@ -77,20 +40,39 @@ Widget buildButton() {
             ),
           ),
         ),
+        const SizedBox(
+          height: 10.0,
+        ),
+        MyButton(
+          color: Colors.blue,
+          radius: 4.0,
+          onPressed: () {},
+          image: Image.asset('image/glogo.png'),
+          text: const Text(
+            'Login with Google',
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 15.0,
+            ),
+          ),
+        ),
+        const SizedBox(
+          height: 10.0,
+        ),
         ButtonTheme(
           height: 50.0,
           // RaisedButton(
           //   child: Row(
           //     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           //     children: <Widget>[
-          //       Image.asset('images/flogo.png'),
+          //       Image.asset('image/flogo.png'),
           //        Text(
           //         'Login with Facebook',
           //         style: TextStyle(color: Colors.white, fontSize: 15.0),
           //       ),
           //       Opacity(
           //         opacity: 0.0,
-          //         child: Image.asset('images/glogo.png'),
+          //         child: Image.asset('image/glogo.png'),
           //       ),
           //     ],
           //   ),
@@ -110,9 +92,9 @@ Widget buildButton() {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
-                Image.asset('images/glogo.png'),
+                Image.asset('image/glogo.png'),
                 const Text(
-                  'Login with Google',
+                  'Login with Facebook',
                   style: TextStyle(
                     color: Colors.black87,
                     fontSize: 15.0,
@@ -169,7 +151,7 @@ Widget buildButton() {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
-                Image.asset('images/glogo.png'),
+                Image.asset('image/glogo.png'),
                 const Text(
                   'Login with Google',
                   style: TextStyle(

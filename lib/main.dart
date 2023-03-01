@@ -52,7 +52,7 @@ class Login extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: <Widget>[
-                    Image.asset('images/glogo.png'),
+                    Image.asset('image/glogo.png'),
                     const Text(
                       'Login with Google',
                       style: TextStyle(
@@ -78,14 +78,14 @@ class Login extends StatelessWidget {
               //   child: Row(
               //     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               //     children: <Widget>[
-              //       Image.asset('images/flogo.png'),
+              //       Image.asset('image/flogo.png'),
               //       const Text(
               //         'Login with Facebook',
               //         style: TextStyle(color: Colors.white, fontSize: 15.0),
               //       ),
               //       Opacity(
               //         opacity: 0.0,
-              //         child: Image.asset('images/glogo.png'),
+              //         child: Image.asset('image/glogo.png'),
               //       ),
               //     ],
               //   ),
@@ -105,7 +105,7 @@ class Login extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: <Widget>[
-                    Image.asset('images/glogo.png'),
+                    Image.asset('image/glogo.png'),
                     const Text(
                       'Login with Google',
                       style: TextStyle(
@@ -164,7 +164,7 @@ class Login extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: <Widget>[
-                    Image.asset('images/glogo.png'),
+                    Image.asset('image/glogo.png'),
                     const Text(
                       'Login with Google',
                       style: TextStyle(
